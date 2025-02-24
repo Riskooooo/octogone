@@ -1,0 +1,57 @@
+/* ---- MOBILE (portrait) ---- */
+
+@media only screen and (max-width : 440px) {
+    header{
+        top: 0;
+        left: 0;
+        margin-left: 150px;
+    }
+    header ul li a{
+        font-size: 8px;
+    }
+    header #contact{
+        width: 110px;
+        padding: 10px 15px;
+    }
+    header img{
+        width: 90px;
+        height: 52px;
+    }
+    .wrapper{
+        gap: 60px 25px;
+        grid-template-columns: repeat(2, 220px);
+        grid-template-rows: repeat(3, 208px);
+    }
+    .left-frm, .right-frm{
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1400px) {
+    .left-frm, .right-frm{
+        display: none;
+    }
+}
+
+@media only screen and (max-width : 1000px) {
+    .burger{
+        display: none;
+    }
+}
+
+/* ---- TABLET (portrait) ---- */
+
+@media only screen and (max-device-width : 1030px) and (orientation : portrait) {
+    p{
+        width: 740px;
+        font-size: 14px;
+    }
+    .wrapper{
+        gap: 80px 30px;
+        grid-template-columns: repeat(3, 220px);
+        grid-template-rows: repeat(2, 208px);
+    }
+    .left-frm, .right-frm{
+        display: none;
+    }
+}
